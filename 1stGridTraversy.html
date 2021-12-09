@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         .wrapper{
+             display: grid;
+             grid-template-columns: 50% 50%;
+             /* grid-column-gap: 1em;
+             grid-row-gap: 2em; */
+             grid-gap: 1em;   
+         }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+    
+        .wrapper > :nth-child(odd){
+            background: #ddd;
+        }
+
+        .wrapper >:nth-child(2){
+            background:rgb(92, 131, 108);
+        }
+        
+        .wrapper >:nth-child(3){
+            background:rgb(92, 99, 131);
+        }
+
+        .wrapper >:nth-child(4){
+            background:hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel aliquid consequuntur fuga quos excepturi alias dolorem? Voluptate quas maiores magnam cumque, quos iste sint officia aspernatur architecto recusandae itaque vitae quo ullam fuga quod quia nihil esse distinctio perferendis ipsa ducimus tempore quidem atque. Ut ex officiis, ab harum, minima iusto, repudiandae fugiat corrupti quos distinctio itaque quia aspernatur adipisci eveniet voluptas exercitationem cum iure vero consequuntur magni. Repudiandae deserunt ipsum a dolor delectus qui distinctio reiciendis fugiat sint.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aut minima optio, recusandae, nostrum voluptatum eius consequatur eligendi officia facere amet quas repellendus. Animi tempore magnam voluptatem, natus ut perspiciatis.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel aliquid consequuntur fuga quos excepturi alias dolorem? Voluptate quas maiores magnam cumque, quos iste sint officia aspernatur architecto recusandae itaque vitae quo ullam fuga quod quia nihil esse distinctio perferendis ipsa ducimus tempore quidem atque. Ut ex officiis, ab harum, minima iusto, repudiandae fugiat corrupti quos distinctio itaque quia aspernatur adipisci eveniet voluptas exercitationem cum iure vero consequuntur magni. Repudiandae deserunt ipsum a dolor delectus qui distinctio reiciendis fugiat sint.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem illo a tenetur voluptatum odit natus vitae deleniti. Dolore fugit sapiente, dolores aliquam porro, eos numquam commodi nihil, velit vero dolorem?
+        </div>
+    </div>
+</body>
+</html>

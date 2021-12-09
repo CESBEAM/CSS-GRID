@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    grid-template-areas:
+       "main   main   header"
+       "main   main   candy "
+       "nom    yum    candy "
+       "footer footer candy ";
+    height: 100vh;
+    margin: 0;
+}
+
+main{
+  grid-area: main;
+   /* 1 / 1 / 3 / 3; */
+  background: #EFEFEF;
+}
+
+main > .logo{
+    display: flex;
+    padding: 34px 15%;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 12%;
+}
+
+.logo a{
+    text-decoration: none;
+    list-style: none;
+    color: #F8485E;
+}
+
+main > h1{
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300px;
+    padding: 10px 15%;
+    color: #161853;
+}
+
+main > text1{
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    padding: 2px 15%;
+    word-spacing: 5px;
+}
+
+section.nom{
+    grid-area: nom;
+    /* padding: 40px 15%; */
+    background: #FFC069;
+}
+
+section.nom > candytext{
+    display: flex;
+    grid-area: nom;
+    /* 3 / 1 / 4 / 2;  */
+    text-align: center;
+    padding: 100px 35%;
+    
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 24px;
+    color: #EFEFEF;
+    
+}
+
+section.yum{
+    display: flex;
+    grid-area: yum;
+     /* 3 / 2 / 4 / 3;  */
+     /* padding: 40px 15%; */
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 24px;
+    color: #EFEFEF;
+    background: #212121;
+}
+
+section.yum > yumtext{
+    display: flex;
+    grid-area: yum;
+    /* 3 / 1 / 4 / 2;  */
+    text-align: center;
+    padding: 100px 35%;
+    
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 24px;
+    color: #EFEFEF;
+}
+
+section.diabeetus{
+    grid-area: footer;
+     /* 4 / 1 / 5 / 3 ; */
+    background: #4A403A;
+}
+
+section.diabeetus >text2{
+    display: flex;
+     grid-area: footer;
+     /* 4 / 1 / 5 / 3 ; */
+     text-align: center;
+     font-family: 'DM Sans', sans-serif;
+     font-size: 16px;
+     padding: 50px;
+     color: #EFEFEF;
+}
+
+header{
+    grid-area: header;
+     /* 1 / 3 / 2 / 4; */
+    background: #EFEFEF;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+}
+header > ul{
+    overflow: hidden;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+    list-style: none;
+}
+
+.navi a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+
+
+.candy{
+    grid-area: 2 / 3 / 5 / 4 ;
+    background: url('images/candy.jpg') no-repeat;
+    background-size: cover;
+}
+
+a:hover{
+    color: #A45D5D;
+}

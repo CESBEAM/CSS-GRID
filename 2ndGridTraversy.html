@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+           display: grid;
+           /* grid-template-columns:1fr 1fr 1fr */
+           grid-template-columns: repeat(3, 1fr);
+           grid-gap: 1em;
+           /* grid-auto-rows: 100px; */
+           grid-auto-rows: minmax(100px, auto);
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap:1em;
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+        .wrapper > div:nth-child(even){
+            background: #d45d;
+        }
+
+        .nested > div{
+            border: #333 1px solid;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit. 1
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis, possimus quia earum omnis labore quod dolorem id expedita culpa magnam, assumenda dolore quaerat molestias soluta? Quisquam obcaecati fugiat, magnam laborum repellendus quaerat dolorum eaque, soluta voluptas praesentium qui, rerum rem fuga est asperiores eveniet iure pariatur voluptatum eum minima doloremque maxime. Quasi, velit accusamus? Blanditiis explicabo dolores ut commodi placeat at vitae odit culpa quam nostrum rem odio velit incidunt quod aperiam sapiente, nihil aut quo delectus quos minus veritatis. Ipsum ex neque, minus dolores numquam eum vitae fugit similique reprehenderit accusantium nisi odio quos itaque magnam dolore repellendus.
+        </div>
+        <div>
+            Lorem ipsum dolor sit. 2
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, consequatur aliquid repudiandae explicabo dignissimos maxime error sequi. Esse voluptatibus facilis neque, repellendus repudiandae odio ea accusamus quaerat, repellat cum harum eveniet! Nulla quia dolorem, eos ullam reiciendis commodi corporis veritatis fugiat, dignissimos atque error asperiores consequuntur tempore ipsa voluptatibus autem consectetur. Rem eius placeat libero animi odio, alias magni dolorem obcaecati, aut commodi blanditiis accusantium quae labore nesciunt? Dolore repellat ipsum magnam sit corporis perspiciatis repudiandae doloremque, eius, voluptatibus velit ipsam consequatur, in unde! Rerum, facilis neque! Ad vitae culpa ipsum sapiente quae nesciunt magni, hic, ducimus modi aliquid corporis.
+        </div>
+        <div class="nested">
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+            <div> Lorem ipsum 3</div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit. 4
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni tempore earum ex obcaecati, rem sed voluptas, doloribus reprehenderit ipsum minus reiciendis dolor iste amet iusto sit laudantium, maiores repudiandae? Repudiandae eveniet officia accusantium aliquid aperiam rem nobis nesciunt dignissimos vitae earum eaque, temporibus obcaecati quo doloribus molestiae tenetur sit. Nulla fugiat minus quidem aspernatur. Hic, impedit. Commodi, cum impedit ducimus explicabo dolore maiores voluptatum in odit cupiditate, est placeat voluptas? Quisquam qui, eaque sint ab debitis quas, fugit nostrum voluptas tenetur saepe eos rerum, mollitia error quo soluta. Aut laboriosam fugit provident molestiae excepturi et illum magni vero id impedit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit. 5
+        </div>
+        <div>
+            Lorem ipsum dolor sit. 6
+        </div>
+        <div>
+            Lorem ipsum dolor sit. 7
+        </div>
+    </div>
+</body>
+</html>
