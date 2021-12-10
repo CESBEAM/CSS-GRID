@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-body{  
+body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -10,36 +10,35 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-   
-    grid-template-areas:
-    "grid1 grid1 grid1 navi-section navi-section"
-    "grid1 grid1 grid1 grid4 grid4"
-    "grid2 grid2 grid2 grid2 grid2"
-    "grid5 grid6 grid7 grid8 grid9";
+    grid-template-areas: 
+    "main main main header header"
+    "main main main news news"
+    "content content content content content"
+    "low low low low low";
+
     height: 200vh;
-    margin: 0;
 }
 
-.grid1{
-    grid-area: grid1;
-   background: url('images/for.jpg') no-repeat;
-   background-size: cover;
-  
- 
+main{
+    grid-area: main;
+    
+    background: url('images/for.jpg') no-repeat;
+    background-size: cover;
 }
-.grid1 .head-content1{
+
+main .head-content1{
     display: flex;
 }
 
-.grid1 .head1{
+main .head1{
     flex: 1;
-     padding: 100px 15%;        
+    padding: 100px 15%;   
 }
-.grid1 .text-content1{
+main .text-content1{
     display: flex;
 }
 
-.grid1 .text1{
+main .text1{
     text-align: justify;
     flex: 1;
     padding: 30px 15%;     
@@ -57,7 +56,7 @@ padding: 1em;
 text-align: center;
 
 color: white;
-background: #151420;
+background: #1f1b17;
 border-radius: 10px;
 }
 
@@ -66,18 +65,25 @@ flex: 1;
 padding: 1em;
 text-align: center;
 color: white;
-background: #151420;
+background: #1f1b17;
 border-radius: 10px;
 }
 
-navi-section{
-    grid-area: navi-section;
-    font-weight: 500px;
-    font-size: 16px;
-    background: #c0c7c2;
+
+section.content{
+    grid-area: content;
+    
+    background: #2c2a50;
 }
 
-navi-section > ul{
+header{
+    grid-area: header;
+    background: #c0c7c2;
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+header > ul{
     overflow: hidden;
 	display: flex;
     justify-content: space-between;
@@ -93,39 +99,23 @@ navi-section > ul{
 }
 
 
+section.news{
+    grid-area: news;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('images/san.jpg')no-repeat;   
+    background-size: cover;
+}
 
+section.news > h1{
+    text-align: center;
+   padding: 15px;
+   font-size: 3em;
+   color: #ddd;
+}
 
-.grid2{
-    grid-area:  grid2;
+section.low{
+    grid-area: low;
     background: #fefdf3;
 }
 
-.grid4{
-    grid-area:  grid4;
-    background: #c0c7c2;
-}
 
-.grid5{
-    grid-area:  grid5;
-    background: #2c2a50;
-}
 
-.grid6{
-    grid-area:  grid6;
-    background: #2c2a50;
-}
-
-.grid7{
-    grid-area:  grid7;
-    background: #2c2a50;
-}
-
-.grid8{
-    grid-area:  grid8;
-    background: #2c2a50;
-}
-
-.grid9{
-    grid-area:  grid9;
-    background:#2c2a50;
-}
