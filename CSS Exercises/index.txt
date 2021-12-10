@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gridStyle.css">
+</head>
+<body>
+    <div class="grid-container">
+
+     <div class="grid1"> 
+         <div class="head-content1">
+          <h1 class="head1">Spring is here again <br>Tender age in bloom</h1>
+        </div>
+          
+          <div class="text-content1">
+          <p class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde impedit asperiores doloremque nesciunt nemo a aspernatur consectetur illum, in odio distinctio quos natus possimus quam! Inventore aut laborum libero facilis soluta modi voluptates eius ipsum rerum vel distinctio explicabo repellendus sapiente voluptas reiciendis, non hic veritatis obcaecati commodi! Exercitationem, quam?</p>
+        </div>
+          
+          <div class="account">
+            <div class="btn-sign">LOGIN</div>
+
+            <div class="btn-signup">SIGN UP</div>
+        </div>
+        </div>
+ 
+     <div class="grid2">
+       
+     </div>
+          <navi-section>
+            <ul class="navi">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul> 
+        </navi-section>
+    
+
+     <div class="grid4">
+       
+     </div>
+
+     <div class="grid5">
+        grid 5
+     </div>
+
+     <div class="grid6">
+        grid 6
+     </div>
+
+     <div class="grid7">
+        grid 7
+     </div>
+
+     <div class="grid8">
+        grid 8
+    </div>
+
+    <div class="grid9">
+        grid 9
+    </div>
+
+</div>
+</body>
+</html> -->

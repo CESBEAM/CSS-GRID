@@ -145,7 +145,7 @@ header > ul{
 
 
 .candy{
-    grid-area: 2 / 3 / 5 / 4 ;
+    grid-area: candy;
     background: url('images/candy.jpg') no-repeat;
     background-size: cover;
 }
